@@ -1,12 +1,22 @@
-name: 'Container Action Template'
-description: 'Get started with Container actions'
-author: 'GitHub'
-inputs: 
-  myInput:
-    description: 'Input to use'
-    default: 'world'
+name: 'Wait for HTTP with auth'
+description: 'Wait for HTTP with authentication'
+author: 'jpcanoso'
+branding:
+  icon: clock
+  color: green
+inputs:
+  URL:
+    description: 'URL to use'
+    default: 'localhost'
+  USER:
+    description: 'Username to use'
+    default: 'admin'
+  PASS:
+    description: 'Password to use'
+    default: 'admin'
+  TIME:
+    description: 'Time to wait (s)'
+    default: 10
 runs:
   using: 'docker'
   image: 'Dockerfile'
-  args:
-    - ${{ inputs.myInput }}
