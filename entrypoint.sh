@@ -1,8 +1,6 @@
 #!/bin/sh -l
 
 set -e
-
-cmd="$@"
   
 until curl -i -s -f -o /dev/null -u $INPUT_WAIT_USER:$INPUT_WAIT_PASS $INPUT_WAIT_URL; do
   >&2 echo "Service is not ready - waiting $INPUT_WAIT_TIME s"
