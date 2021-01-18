@@ -5,16 +5,16 @@ branding:
   icon: clock
   color: green
 inputs:
-  URL:
+  WAIT_URL:
     description: 'URL to use'
     default: 'localhost'
-  USER:
+  WAIT_USER:
     description: 'Username to use'
     default: 'admin'
-  PASS:
+  WAIT_PASS:
     description: 'Password to use'
     default: 'admin'
-  TIME:
+  WAIT_TIME:
     description: 'Time to wait (s)'
     default: 10
 runs:
