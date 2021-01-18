@@ -1,4 +1,6 @@
-FROM busybox:latest
+FROM alpine:3.10
+
+RUN apk add --no-cache curl
 
 COPY LICENSE README.md /
 

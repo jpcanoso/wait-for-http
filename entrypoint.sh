@@ -5,7 +5,7 @@ set -e
 cmd="$@"
   
 until curl -i -s -f -o /dev/null -u $INPUT_USER:$INPUT_PASS $INPUT_URL; do
-  >&2 echo "Service is not ready - waiting $INPUT_TIME"
+  >&2 echo "Service is not ready - waiting $INPUT_TIME s"
   sleep $INPUT_TIME
 done
 
